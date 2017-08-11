@@ -13,7 +13,7 @@ import okhttp3.Response;
  * @ 文件名:   HeaderInterceptor
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午2:59
- * @ 描述:
+ * @ 描述:    头拦截
  */
 
 public class HeaderInterceptor implements Interceptor {

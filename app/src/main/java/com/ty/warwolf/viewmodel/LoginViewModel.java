@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.ty.warwolf.base.BaseActivity;
 import com.ty.warwolf.base.BaseViewModel;
 import com.ty.warwolf.base.LoadingPager;
+import com.ty.warwolf.config.ConstZh;
 import com.ty.warwolf.databinding.ActivityLoginBinding;
 import com.ty.warwolf.model.bean.base.User;
 import com.ty.warwolf.model.retrofit.RetrofitFactory;
@@ -32,7 +33,7 @@ import rx.schedulers.Schedulers;
  * @ 文件名:   LoginViewModel
  * @ 创建者:   ty
  * @ 时间:    2017/8/11 上午9:14
- * @ 描述:
+ * @ 描述:    登录VM
  */
 
 public class LoginViewModel extends BaseViewModel<ActivityLoginBinding> {
@@ -48,7 +49,7 @@ public class LoginViewModel extends BaseViewModel<ActivityLoginBinding> {
         super(pager, activity, binding);
         mDialog = new ProgressDialog(mActivity);
         mDialog.setCancelable(false);
-        mDialog.setMessage("正在登录...");
+        mDialog.setMessage(ConstZh.LOGIN_LOADING);
     }
 
     public void loginClick(View view) {

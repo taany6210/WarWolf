@@ -4,7 +4,7 @@ package com.ty.warwolf.model.bean.base;
  * @ 文件名:   Today
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午4:19
- * @ 描述:
+ * @ 描述:    历史上的今天
  */
 
 public class Today extends BaseBean {

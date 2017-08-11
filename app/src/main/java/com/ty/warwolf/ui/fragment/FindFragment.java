@@ -11,7 +11,7 @@ import com.ty.warwolf.databinding.FragmentFindBinding;
  * @ 文件名:   FindFragment
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午3:12
- * @ 描述:
+ * @ 描述:    发现
  */
 
 public class FindFragment extends BaseFragment<FragmentFindBinding> {

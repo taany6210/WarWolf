@@ -1,6 +1,5 @@
 package com.ty.warwolf.viewmodel;
 
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
 
@@ -24,7 +23,7 @@ import rx.schedulers.Schedulers;
  * @ 文件名:   HomeViewModel
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午3:40
- * @ 描述:
+ * @ 描述:    首页VM
  */
 
 public class HomeViewModel extends BaseViewModel<FragmentHomeBinding> {
@@ -63,10 +62,6 @@ public class HomeViewModel extends BaseViewModel<FragmentHomeBinding> {
      */
     public void onItemClick(View view, Today today) {
         Toast.makeText(mActivity, today.getTitle(), Toast.LENGTH_SHORT).show();
-    }
-
-    public void onHomeItemClick(CardView view, Today today){
-
     }
 
 }

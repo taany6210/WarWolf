@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * @ 文件名:   RetrofitFactory
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午3:00
- * @ 描述:
+ * @ 描述:    生成网络请求
  */
 
 public class RetrofitFactory {

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import com.ty.warwolf.R;
 import com.ty.warwolf.base.BaseActivity;
 import com.ty.warwolf.base.LoadingPager;
+import com.ty.warwolf.config.ConstZh;
 import com.ty.warwolf.databinding.ActivityLoginBinding;
 import com.ty.warwolf.viewmodel.LoginViewModel;
 
@@ -12,7 +13,7 @@ import com.ty.warwolf.viewmodel.LoginViewModel;
  * @ 文件名:   LoginActivity
  * @ 创建者:   ty
  * @ 时间:    2017/8/11 上午9:11
- * @ 描述:
+ * @ 描述:    登录页面
  */
 public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
 
@@ -26,7 +27,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-        getBaseBinding().toolBar.setTitle("登录");
+        getBaseBinding().toolBar.setTitle(ConstZh.LOGIN);
     }
 
     @Override

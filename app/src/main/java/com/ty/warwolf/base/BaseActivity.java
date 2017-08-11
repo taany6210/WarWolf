@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
@@ -16,6 +15,7 @@ import android.widget.LinearLayout;
 
 import com.dgrlucky.log.LogX;
 import com.ty.warwolf.R;
+import com.ty.warwolf.config.ConstZh;
 import com.ty.warwolf.databinding.ActivityBaseBinding;
 import com.ty.warwolf.ui.activity.MainActivity;
 import com.ty.warwolf.util.PageManager;
@@ -175,14 +175,6 @@ public abstract class BaseActivity<B extends ViewDataBinding> extends AppCompatA
         return 0;
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            LogX.d("按了返回键");
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-
     /**
      * 完成退出
      */
@@ -194,11 +186,11 @@ public abstract class BaseActivity<B extends ViewDataBinding> extends AppCompatA
     public void onBackPressed() {
         if (this instanceof MainActivity) {
             mDialog = new AlertDialog.Builder(this)
-                    .setTitle("退出提示")
-                    .setMessage("是否退出应用?")
-                    .setNegativeButton("取消", (dialogInterface, i) ->
+                    .setTitle(ConstZh.EXIT_TITLE)
+                    .setMessage(ConstZh.EXIT_APP)
+                    .setNegativeButton(ConstZh.CANCEL, (dialogInterface, i) ->
                             dialogInterface.dismiss())
-                    .setPositiveButton("退出", (dialogInterface, i) -> {
+                    .setPositiveButton(ConstZh.EXIT, (dialogInterface, i) -> {
                         exit();
                     }).create();
 
@@ -220,7 +212,7 @@ public abstract class BaseActivity<B extends ViewDataBinding> extends AppCompatA
                 mDialog.dismiss();
             }
         } catch (Exception e) {
-            LogX.e("取消dialog失败");
+            LogX.e(ConstZh.CANCEL_DIALOG_FAILED);
         }
         PageManager.removePage(this);
         unsubscribe();

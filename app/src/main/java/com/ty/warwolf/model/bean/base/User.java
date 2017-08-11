@@ -4,7 +4,7 @@ package com.ty.warwolf.model.bean.base;
  * @ 文件名:   User
  * @ 创建者:   ty
  * @ 时间:    2017/8/11 上午10:38
- * @ 描述:
+ * @ 描述:    用户
  */
 
 public class User extends BaseBean {

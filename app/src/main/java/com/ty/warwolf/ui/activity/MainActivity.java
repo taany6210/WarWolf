@@ -16,7 +16,7 @@ import com.ty.warwolf.ui.fragment.MineFragment;
  * @ 文件名:   MainActivity
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 上午10:33
- * @ 描述:
+ * @ 描述:    主activity
  */
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
 

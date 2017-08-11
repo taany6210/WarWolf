@@ -6,7 +6,7 @@ import java.io.Serializable;
  * @ 文件名:   Reply
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午3:00
- * @ 描述:
+ * @ 描述:    Rx解析用
  */
 
 public class Reply<T> implements Serializable{

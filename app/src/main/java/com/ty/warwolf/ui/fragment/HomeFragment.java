@@ -18,7 +18,7 @@ import in.srain.cube.views.ptr.PtrHandler;
  * @ 文件名:   HomeFragment
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午3:12
- * @ 描述:
+ * @ 描述:    首页
  */
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding> {

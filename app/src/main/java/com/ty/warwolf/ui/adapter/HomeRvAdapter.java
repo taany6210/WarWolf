@@ -17,7 +17,7 @@ import java.util.List;
  * @ 文件名:   HomeRvAdapter
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午4:33
- * @ 描述:
+ * @ 描述:    首页适配器
  */
 
 public class HomeRvAdapter extends RecyclerView.Adapter<HomeRvAdapter.HomeViewHolder> {

@@ -6,7 +6,7 @@ import java.io.Serializable;
  * @ 文件名:   BaseBean
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午4:23
- * @ 描述:
+ * @ 描述:    bean基类
  */
 
 public class BaseBean implements Serializable {

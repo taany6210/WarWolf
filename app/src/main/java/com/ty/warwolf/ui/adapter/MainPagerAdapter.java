@@ -13,7 +13,7 @@ import java.util.List;
  * @ 文件名:   MainPagerAdapter
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午3:09
- * @ 描述:
+ * @ 描述:    主UI适配器
  */
 
 public class MainPagerAdapter extends FragmentPagerAdapter {

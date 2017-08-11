@@ -4,6 +4,7 @@ import android.databinding.BaseObservable;
 import android.databinding.ViewDataBinding;
 
 import com.dgrlucky.log.LogX;
+import com.ty.warwolf.config.ConstZh;
 import com.ty.warwolf.util.NetworkUtil;
 
 import rx.Subscription;
@@ -29,7 +30,7 @@ public class BaseViewModel<B extends ViewDataBinding> extends BaseObservable {
 
     public void checkNetwork() {
         if (!NetworkUtil.isAvailable(App.sContext)) {
-            LogX.e("没有网络.....");
+            LogX.e(ConstZh.NO_NETWORK);
             mPager.onDataLoading(LoadingPager.LoadedResult.SUCCESS);
             return;
         }

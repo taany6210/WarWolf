@@ -17,11 +17,19 @@ import rx.Observable;
  * @ 文件名:   ApiService
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午2:59
- * @ 描述:
+ * @ 描述: API类
  */
 
 public interface ApiService {
 
+    /**
+     * 聚合数据获取历史上的今天
+     *
+     * @param key   申请的key
+     * @param month 月份
+     * @param day   日期
+     * @return
+     */
     @GET("japi/toh")
     Observable<Reply<List<Today>>> getHistory(@Query("key") String key, @Query("month") String month, @Query("day") String day);
 

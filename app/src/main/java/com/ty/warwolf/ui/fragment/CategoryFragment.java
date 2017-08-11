@@ -11,7 +11,7 @@ import com.ty.warwolf.databinding.FragmentCategoryBinding;
  * @ 文件名:   CategoryFragment
  * @ 创建者:   ty
  * @ 时间:    2017/8/2 下午3:12
- * @ 描述:
+ * @ 描述:    分类
  */
 
 public class CategoryFragment extends BaseFragment<FragmentCategoryBinding> {
