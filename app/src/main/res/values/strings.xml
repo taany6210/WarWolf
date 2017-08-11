@@ -5,4 +5,8 @@
     <string name="title_notifications">发现</string>
     <string name="title_mine">我的</string>
 
+    <string name="login">登录</string>
+    <string name="pass_word">登录密码(至少6位)</string>
+    <string name="login_by_phone">手机号登录</string>
+    <string name="forget_pass_word">忘记密码</string>
 </resources>

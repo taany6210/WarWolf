@@ -2,10 +2,14 @@ package com.ty.warwolf.model.api;
 
 import com.ty.warwolf.model.bean.base.Reply;
 import com.ty.warwolf.model.bean.base.Today;
+import com.ty.warwolf.model.bean.base.User;
 
 import java.util.List;
 
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 import rx.Observable;
 
@@ -19,6 +23,17 @@ import rx.Observable;
 public interface ApiService {
 
     @GET("japi/toh")
-    Observable<Reply<List<Today>>> getHistory(@Query("key")String key, @Query("month")String month, @Query("day")String day);
+    Observable<Reply<List<Today>>> getHistory(@Query("key") String key, @Query("month") String month, @Query("day") String day);
+
+    /**
+     * 手机登录
+     *
+     * @param phone   手机号码
+     * @param pssWord 登录密码
+     * @return
+     */
+    @FormUrlEncoded
+    @POST("User/login")
+    Observable<Reply<User>> login(@Field("phone") String phone, @Field("password") String pssWord);
 
 }

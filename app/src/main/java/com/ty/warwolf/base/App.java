@@ -41,7 +41,5 @@ public class App extends Application {
         mHandler = new Handler();
         mMainThreadId = android.os.Process.myTid();
         mMainThread = Thread.currentThread();
-        //AppSystemUtil.initAppSystemData(this);
-        //LogX.init(BuildConfig.DEBUG, OkHttpResponseParse.class);//支持okhttp解析
     }
 }
