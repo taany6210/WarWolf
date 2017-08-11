@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.ty.warwolf"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        buildConfigField("String", "host", "\"${host}\"")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    signingConfigs {
+        release {
+            keyAlias 'warwolf'
+            keyPassword 'warwolf'
+            storeFile file('key/warwolf.jks')
+            storePassword 'warwolf'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //dex编译相关
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize = "2560m"
+    }
+    //lint代码检查
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    //数据绑定
+    dataBinding {
+        enabled = true
+    }
+    //指定Java版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //retrofit
+    //RxJava
+    //其他
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile 'com.android.support:support-annotations:26.+'
+    compile 'com.android.support:support-vector-drawable:26.+'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.4.1'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'id.arieridwan:pageloader:0.0.2'
+    compile 'com.github.dgrlucky:logx:1.0.0'
+    compile 'com.lzy.widget:imagepicker:0.1.4'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.todou:appbarspring:1.0.3'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

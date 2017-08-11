@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">战狼</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">分类</string>
+    <string name="title_notifications">发现</string>
+    <string name="title_mine">我的</string>
+
+</resources>
