@@ -1,6 +1,8 @@
 # WarWolf
 
-### 最近看完战狼2电影，就随便取了一个名字，莫怪莫怪！
+- 2017年10月28日  去除掉layout文件夹下所有XML文件中的中文。
+ 
+> Mac与Windows默认编码格式不统一，会导致在Windows上面报错。只要将layout下面所有的XML中的中文（包括标点符号）去掉就可以了。  
 
 简书地址：[Android独立开发从入门到放弃](http://www.jianshu.com/p/8f0df064e442)
 
