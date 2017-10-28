@@ -19,8 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="暂无数据"
-            android:textColor="#898989"
+            android:text="@string/no_data"
+            android:textColor="@color/ty_999999"
             android:textSize="18sp"/>
 
     </LinearLayout>

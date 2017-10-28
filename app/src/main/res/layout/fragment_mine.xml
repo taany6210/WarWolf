@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="我的"
+            android:text="@string/title_mine"
             android:gravity="center_horizontal"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"/>

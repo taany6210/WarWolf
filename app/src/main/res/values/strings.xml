@@ -4,9 +4,17 @@
     <string name="title_dashboard">分类</string>
     <string name="title_notifications">发现</string>
     <string name="title_mine">我的</string>
+    <string name="no_data">暂无数据</string>
 
     <string name="login">登录</string>
     <string name="pass_word">登录密码(至少6位)</string>
     <string name="login_by_phone">手机号登录</string>
     <string name="forget_pass_word">忘记密码</string>
+
+    <string name="find">发现</string>
+    <string name="lunar">农历</string>
+
+    <string name="today_title">宋朝著名抗金女英雄梁红玉遇难</string>
+    <string name="today_des">在882年前的今天，1135年11月4日 (农历九月廿七)，宋朝著名抗金女英雄梁红玉遇难。</string>
+    <string name="today_lunar">农历：乙卯年九月廿七</string>
 </resources>

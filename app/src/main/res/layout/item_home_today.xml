@@ -48,7 +48,7 @@
                     android:text="@{today.title}"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    tools:text="宋朝著名抗金女英雄梁红玉遇难"/>
+                    tools:text="@string/today_title"/>
 
                 <android.support.v7.widget.AppCompatTextView
                     android:layout_width="match_parent"
@@ -59,17 +59,17 @@
                     android:text="@{today.des}"
                     android:textColor="@color/ty_3a3a3a"
                     android:textSize="14sp"
-                    tools:text="在882年前的今天，1135年11月4日 (农历九月廿七)，宋朝著名抗金女英雄梁红玉遇难。"/>
+                    tools:text="@string/today_des"/>
 
 
                 <android.support.v7.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text='@{"农历："+today.lunar}'
+                    android:text="@{@string/lunar+today.lunar}"
                     android:textColor="@color/ty_ff0097A7"
                     android:textSize="16sp"
-                    tools:text="农历：乙卯年九月廿七"/>
+                    tools:text="@string/today_lunar"/>
             </LinearLayout>
 
         </LinearLayout>
